@@ -1,4 +1,4 @@
-### Estrutura do Blog sobre Bitcoin
+# Estrutura do Blog sobre Bitcoin
 
 ---
 
