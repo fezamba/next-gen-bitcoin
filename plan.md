@@ -1,7 +1,5 @@
 # Estrutura do Blog sobre Bitcoin
 
----
-
 ## 1. O que é Bitcoin? Uma Introdução Simples
 
 * Explicar o conceito básico de Bitcoin.
