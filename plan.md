@@ -11,7 +11,6 @@
 * Explicar inflação, impressão monetária e perda do poder de compra.
 * Exemplos históricos (hiperinflação na Alemanha, Venezuela, Zimbabwe).
 * Fonte sugerida: Livro "O Padrão Bitcoin", Saifedean Ammous.
-* Link recomendado: [https://mises.org.br/artigos/a-hiperinflacao-na-venezuela-e-a-destruicao-do-dinheiro-fiat](https://mises.org.br/artigos/a-hiperinflacao-na-venezuela-e-a-destruicao-do-dinheiro-fiat)
 
 ## 3. Bitcoin vs. Dinheiro Fiat: Uma Comparação Direta
 
@@ -41,28 +40,17 @@
 * Passo a passo para aquisição segura (Exchanges, carteiras).
 * Como gastar Bitcoin diretamente ou via intermediários.
 * Dicas práticas e exemplos reais de pessoas vivendo com Bitcoin.
-* Links recomendados:
-
-  * [https://bitfy.app/](https://bitfy.app/)
-  * [https://bluewallet.io/](https://bluewallet.io/)
 
 ## 8. Vencendo os Mitos: Segurança e Privacidade do Bitcoin
 
 * Esclarecer dúvidas comuns sobre segurança.
 * Como garantir privacidade e segurança em transações.
 * Exemplo de carteiras seguras (hardware wallets: Ledger e Trezor).
-* Referências recomendadas:
-
-  * [https://trezor.io/](https://trezor.io/)
-  * [https://www.ledger.com/](https://www.ledger.com/)
 
 ## 9. Futuro com Bitcoin: Uma Economia sem Inflação
 
 * Como seria uma economia totalmente baseada em Bitcoin.
 * Exemplo hipotético e realista sobre melhorias econômicas globais.
-* Projeções e estudos acadêmicos:
-
-  * [https://bitcoinmagazine.com/articles/how-bitcoin-could-revolutionize-economics](https://bitcoinmagazine.com/articles/how-bitcoin-could-revolutionize-economics)
 
 ## 10. Conclusão: Por que Você Deveria Adotar Bitcoin Agora
 
