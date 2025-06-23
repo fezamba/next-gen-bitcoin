@@ -1,7 +1,5 @@
 # Next-Gen Bitcoin - Site Educacional
 
-![Banner do Projeto com o logo do Bitcoin](https://images.unsplash.com/photo-1639322537228-f710d846310a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.0.3&q=80&w=1080)
-
 Um site expositivo e interativo sobre Bitcoin, desenvolvido para educar os visitantes sobre os fundamentos da moeda digital, desde seus conceitos básicos até seu impacto potencial na economia global.
 
 ---
