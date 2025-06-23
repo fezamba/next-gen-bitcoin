@@ -1,1 +1,53 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.brand-gold { 
+    color: #F7931A; 
+}
+
+.brand-blue { 
+    color: #0D47A1; 
+}
+
+.nav-link {
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.nav-link:hover {
+    color: #F7931A;
+    border-bottom-color: #F7931A;
+}
+
+.pulse-gold {
+    animation: pulse-gold 2s infinite;
+}
+
+@keyframes pulse-gold {
+    0%, 100% {
+        text-shadow: 0 0 5px #f7931a66, 0 0 10px #f7931a33;
+    }
+    50% {
+        text-shadow: 0 0 15px #f7931a, 0 0 25px #f7931a99;
+    }
+}
+
+.modal-overlay {
+    transition: opacity 0.3s ease;
+}
+
+.modal-content {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
