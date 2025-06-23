@@ -41,30 +41,16 @@
                 text-shadow: 0 0 15px #f7931a, 0 0 25px #f7931a99;
             }
         }
-        /* Gemini Modal Styles */
         .modal-overlay {
             transition: opacity 0.3s ease;
         }
         .modal-content {
-            transition: transform 0.3s ease;
-        }
-        .loader {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #F7931A;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            transition: transform 0.3s ease, opacity 0.3s ease;
         }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-200">
 
-    <!-- Header & Navigation -->
     <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50 shadow-lg shadow-black/20">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="text-2xl font-black brand-gold tracking-wider flex items-center gap-2">
@@ -78,7 +64,7 @@
                 <a href="#pratica" class="nav-link border-b-2 border-transparent pb-1">Na Prática</a>
                 <a href="#futuro" class="nav-link border-b-2 border-transparent pb-1">Futuro</a>
             </div>
-            <a href="#conclusao" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded-lg transition-transform transform hover:scale-105">
+            <a href="#pratica" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded-lg transition-transform transform hover:scale-105">
                 Comece Agora
             </a>
         </nav>
@@ -86,7 +72,6 @@
 
     <main class="container mx-auto px-6 py-8 md:py-16 space-y-24">
 
-        <!-- 1. O que é Bitcoin? -->
         <section id="intro" class="fade-in-section text-center">
             <h1 class="text-4xl md:text-6xl font-black text-white mb-4">O que é <span class="brand-gold pulse-gold">Bitcoin</span>?</h1>
             <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
@@ -98,7 +83,6 @@
             </blockquote>
         </section>
 
-        <!-- 2. Por Que Moedas Fiat são um Problema? -->
         <section id="fiat" class="fade-in-section">
             <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-8">O Problema do Dinheiro <span class="text-red-500">Tradicional</span></h2>
             <div class="grid md:grid-cols-2 gap-8 items-center">
@@ -110,7 +94,6 @@
                     <p class="mt-4 text-gray-400 text-sm">
                         Exemplos históricos como a hiperinflação na Alemanha, Venezuela e Zimbabwe mostram as consequências catastróficas de uma política monetária sem controle.
                     </p>
-                     <a href="https://www.cnnbrasil.com.br/economia/inflacao-da-venezuela-desacelera-para-759-em-12-meses-diz-banco-central/" target="_blank" class="inline-block mt-4 text-yellow-500 hover:text-yellow-400 transition">Ler mais sobre a Venezuela →</a>
                 </div>
                 <div>
                      <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Imagem representando o sistema financeiro" class="rounded-xl shadow-2xl opacity-80" onerror="this.onerror=null;this.src='https://placehold.co/600x400/111827/F7931A?text=Moeda+Fiat';">
@@ -118,7 +101,6 @@
             </div>
         </section>
 
-        <!-- 3. Bitcoin vs. Dinheiro Fiat -->
         <section id="comparacao" class="fade-in-section">
             <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Bitcoin vs. Dinheiro Fiat: Uma Comparação Direta</h2>
             <div class="overflow-x-auto">
@@ -161,7 +143,6 @@
             </div>
         </section>
 
-        <!-- 4. A Beleza da Escassez -->
         <section id="escassez" class="fade-in-section text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">A Beleza da Escassez: Bitcoin como <span class="brand-gold">Ouro Digital</span></h2>
             <p class="text-lg text-gray-300 max-w-3xl mx-auto mb-8">
@@ -174,14 +155,8 @@
             </div>
         </section>
 
-        <!-- 4.5 O Halving: A Escassez Programada -->
         <section id="halving" class="fade-in-section text-center">
-            <div class="flex justify-center items-center gap-4 mb-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-white">O Halving: A Escassez <span class="brand-gold">Programada</span></h2>
-                <button id="explain-halving" title="Explique o Halving de forma simples" class="bg-blue-800/50 hover:bg-blue-700/70 text-yellow-400 font-bold p-2 rounded-full transition-transform transform hover:scale-110">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
-                </button>
-            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">O Halving: A Escassez <span class="brand-gold">Programada</span></h2>
             <p class="text-lg text-gray-300 max-w-3xl mx-auto mb-12">
                 A cada 4 anos, a emissão de novos bitcoins é cortada pela metade. Esse evento, chamado Halving, garante que o Bitcoin se torne cada vez mais raro, fortalecendo sua característica de reserva de valor.
             </p>
@@ -208,32 +183,20 @@
             </div>
         </section>
 
-        <!-- 5. Descentralização -->
         <section id="descentralizacao" class="fade-in-section">
-             <div class="flex justify-center items-center gap-4 mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-center text-white">Descentralização: <span class="brand-gold">Poder</span> para as Pessoas</h2>
-                 <button id="explain-decentralization" title="Explique a Descentralização de forma simples" class="bg-blue-800/50 hover:bg-blue-700/70 text-yellow-400 font-bold p-2 rounded-full transition-transform transform hover:scale-110">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
-                </button>
-            </div>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                 <div>
-                    <img src="https://images.unsplash.com/photo-1518186213749-a42a7f2a76a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80" alt="Imagem de uma rede descentralizada" class="rounded-xl shadow-2xl opacity-80" onerror="this.onerror=null;this.src='https://placehold.co/600x400/111827/F7931A?text=Rede+Descentralizada';">
-                </div>
-                <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
-                    <h3 class="text-2xl font-bold brand-gold mb-3">Como Funciona?</h3>
-                    <p class="text-gray-300">
-                        No sistema financeiro tradicional, um banco central tem todo o poder. No Bitcoin, o poder é distribuído entre milhares de computadores (nós) ao redor do mundo. Nenhuma entidade única pode controlar, censurar ou alterar as regras da rede. Isso garante que seu dinheiro seja verdadeiramente seu.
-                    </p>
-                    <blockquote class="mt-4 border-l-4 border-yellow-500 pl-4 italic text-gray-400">
-                        <p>"A rede funciona à base de uma prova-de-trabalho para prevenir o gasto duplo..."</p>
-                        <footer class="mt-2 text-sm">- Satoshi Nakamoto, sobre a segurança da rede.</footer>
-                    </blockquote>
-                </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-8">Descentralização: <span class="brand-gold">Poder</span> para as Pessoas</h2>
+            <div class="max-w-3xl mx-auto bg-gray-800 p-6 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold brand-gold mb-3">Como Funciona?</h3>
+                <p class="text-gray-300">
+                    No sistema financeiro tradicional, um banco central tem todo o poder. No Bitcoin, o poder é distribuído entre milhares de computadores (nós) ao redor do mundo. Nenhuma entidade única pode controlar, censurar ou alterar as regras da rede. Isso garante que seu dinheiro seja verdadeiramente seu.
+                </p>
+                <blockquote class="mt-4 border-l-4 border-yellow-500 pl-4 italic text-gray-400">
+                    <p>"A rede funciona à base de uma prova-de-trabalho para prevenir o gasto duplo..."</p>
+                    <footer class="mt-2 text-sm">- Satoshi Nakamoto, sobre a segurança da rede.</footer>
+                </blockquote>
             </div>
         </section>
 
-        <!-- 6. Economia Mais Justa -->
         <section id="justica" class="fade-in-section text-center">
              <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Como o Bitcoin Pode Tornar a Economia Mais <span class="brand-gold">Justa</span></h2>
             <p class="text-lg text-gray-300 max-w-3xl mx-auto">
@@ -241,7 +204,6 @@
             </p>
         </section>
 
-        <!-- 7. Bitcoin na Prática -->
         <section id="pratica" class="fade-in-section">
             <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Bitcoin na Prática: Adote no Dia a Dia</h2>
             <div class="grid md:grid-cols-3 gap-8 text-center">
@@ -253,7 +215,7 @@
                 <div class="bg-gray-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform">
                     <div class="text-5xl mb-4">2️⃣</div>
                     <h3 class="text-2xl font-bold text-white mb-2">Adquira Bitcoin</h3>
-                    <p class="text-gray-400">Compre em exchanges (corretoras) confiáveis. No Brasil, apps como o <a href="https://www.bitybank.com.br/" target="_blank" class="text-yellow-500 hover:underline">Bitybank</a> (antigo Bitfy) facilitam a compra.</p>
+                    <p class="text-gray-400">Compre em exchanges (corretoras) confiáveis. No Brasil, apps como o <a href="https://www.bitybank.com.br/" target="_blank" class="text-yellow-500 hover:underline">Bitybank</a> facilitam a compra.</p>
                 </div>
                 <div class="bg-gray-800 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform">
                     <div class="text-5xl mb-4">3️⃣</div>
@@ -262,7 +224,6 @@
                 </div>
             </div>
 
-            <!-- KYC PRO TIP -->
             <div class="mt-16 bg-gray-800/50 border border-yellow-500/30 rounded-xl p-8 max-w-4xl mx-auto">
                 <h3 class="text-2xl font-bold brand-gold mb-3">Dica Pro: Privacidade na Compra (KYC)</h3>
                 <p class="text-gray-300">Ao comprar em exchanges, você precisará fornecer documentos e dados pessoais. Esse processo é chamado de <strong class="text-white">KYC (Conheça Seu Cliente)</strong>.</p>
@@ -271,7 +232,6 @@
 
         </section>
 
-        <!-- 8. Vencendo os Mitos -->
         <section id="mitos" class="fade-in-section">
              <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Vencendo os Mitos: Segurança e Privacidade</h2>
              <div class="max-w-3xl mx-auto space-y-4">
@@ -294,36 +254,20 @@
              </div>
         </section>
         
-        <!-- 9. Futuro com Bitcoin -->
         <section id="futuro" class="fade-in-section text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Um Futuro com Bitcoin: Uma Economia sem Inflação</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Explore a Transparência da Rede</h2>
             <p class="text-lg text-gray-300 max-w-3xl mx-auto mb-8">
-                Imagine uma economia onde o dinheiro não perde valor com o tempo. Você poderia poupar com a certeza de que seu esforço será preservado. Os preços dos bens e serviços tenderiam a cair (deflação benigna), aumentando o poder de compra de todos. O Bitcoin oferece a base para essa possibilidade.
+                Diferente do sistema financeiro tradicional, o Bitcoin é um livro-razão aberto. Você não precisa confiar em uma entidade; você pode verificar por si mesmo. Todas as transações são registradas publicamente no blockchain, disponíveis para qualquer um auditar.
             </p>
-            <a href="https://bitcoinmagazine.com/business/bitcoin-a-fairer-financial-system" target="_blank" class="text-yellow-500 hover:text-yellow-400 transition">Leia mais sobre como o Bitcoin pode revolucionar a economia →</a>
-        </section>
-        
-        <!-- Gemini Feature: Argument Generator -->
-        <section id="gemini-arguments" class="fade-in-section text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Pronto para Espalhar a Palavra?</h2>
-            <p class="text-lg text-gray-300 max-w-3xl mx-auto mb-8">
-                Convencido? O próximo passo é ajudar outros a entenderem. Clique no botão abaixo para que a IA gere argumentos simples e diretos para você usar em uma conversa com um amigo.
-            </p>
-            <button id="generate-arguments-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105 shadow-lg inline-flex items-center gap-2">
-                <span id="btn-text">✨ Me ajude a convencer um amigo</span>
-                <span id="btn-loader" class="hidden loader w-5 h-5 border-2"></span>
-            </button>
-            <div id="arguments-output" class="mt-8 text-left max-w-2xl mx-auto bg-gray-800/50 p-6 rounded-lg prose prose-invert prose-p:my-2 prose-headings:text-yellow-500">
-            </div>
+            <a href="https://www.blockchain.com/pt/explorer" target="_blank" class="text-yellow-500 hover:text-yellow-400 transition">Explore o blockchain em tempo real →</a>
         </section>
 
-        <!-- 10. Conclusão -->
         <section id="conclusao" class="fade-in-section bg-yellow-500 text-gray-900 text-center py-16 rounded-xl">
             <h2 class="text-3xl md:text-4xl font-black mb-4">Por que Você Deveria Adotar Bitcoin Agora?</h2>
             <p class="text-lg text-gray-800 max-w-3xl mx-auto mb-8">
                 Você aprendeu sobre a fragilidade do sistema atual, a força da escassez e o poder da descentralização. O Bitcoin não é apenas um ativo, é uma saída. É a chance de optar por um sistema financeiro mais justo, transparente e que devolve o controle para você.
             </p>
-            <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="bg-gray-900 hover:bg-black text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105 shadow-lg">
+            <button id="action-button" class="bg-gray-900 hover:bg-black text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105 shadow-lg">
                 Participe da Revolução Monetária
             </button>
             <p class="mt-6 font-bold text-xl italic">"A jornada de mil milhas começa com um único passo... ou um único satoshi."</p>
@@ -331,17 +275,23 @@
 
     </main>
 
-    <!-- Gemini Explanation Modal -->
-    <div id="explanation-modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50 hidden opacity-0">
-        <div class="modal-content bg-gray-800 rounded-2xl shadow-2xl w-full max-w-lg p-6 transform scale-95">
+    <div id="action-modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50 hidden opacity-0">
+        <div id="modal-content" class="modal-content bg-gray-800 rounded-2xl shadow-2xl w-full max-w-md p-8 transform scale-95 opacity-0">
             <div class="flex justify-between items-center mb-4">
-                <h3 id="modal-title" class="text-2xl font-bold brand-gold">Explicação Simples</h3>
-                <button id="close-modal-btn" class="text-gray-400 hover:text-white">&times;</button>
+                <h3 class="text-2xl font-bold brand-gold">Seu Ponto de Partida</h3>
+                <button id="close-modal-btn" class="text-gray-400 hover:text-white text-3xl leading-none">&times;</button>
             </div>
-            <div id="modal-body" class="text-gray-300">
-                <div class="flex justify-center items-center h-32">
-                    <div class="loader"></div>
+            <div class="text-gray-300 space-y-6">
+                <p class="text-center">A teoria é o mapa, mas a prática é a jornada. Use os recursos abaixo para começar.</p>
+                <div class="text-center">
+                    <a href="https://bitcoin.org/pt_BR/comecando" target="_blank">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://bitcoin.org/pt_BR/comecando" alt="QR Code para Guia de Iniciantes" class="mx-auto rounded-lg" title="Escaneie para um guia de iniciantes">
+                    </a>
                 </div>
+                <div class="space-y-4">
+                     <a href="https://bitcoin.org/pt_BR/comecando" target="_blank" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition-colors">Acessar Guia de Iniciantes</a>
+                </div>
+                <p class="text-center text-sm text-gray-400 pt-4">Lembre-se: Not your keys, not your coins. Estude sobre auto-custódia.</p>
             </div>
         </div>
     </div>
@@ -349,7 +299,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // --- Basic page animations from previous versions ---
             const sections = document.querySelectorAll('.fade-in-section');
             const sectionObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
@@ -359,10 +308,12 @@
                     }
                 });
             }, { threshold: 0.1 });
-            sections.forEach(section => sectionObserver.observe(section));
+            sections.forEach(section => {
+                sectionObserver.observe(section);
+            });
 
             const counterElement = document.getElementById('btc-counter');
-            if(counterElement) {
+            if (counterElement) {
                 const counterObserver = new IntersectionObserver((entries, observer) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
@@ -373,33 +324,30 @@
                 }, { threshold: 0.8 });
                 counterObserver.observe(counterElement);
             }
-
+            
             function animateCounter(element, target) {
-                let current = 0;
+                 let start = 0;
                 const duration = 2000;
-                const stepTime = 16;
-                const totalSteps = duration / stepTime;
-                const increment = target / totalSteps;
+                const range = target - start;
+                let current = start;
                 
                 const timer = setInterval(() => {
-                    current += increment;
+                    const jump = Math.ceil(range / (duration / 16));
+                    current += jump;
                     if (current >= target) {
                         current = target;
                         clearInterval(timer);
                     }
-                    element.innerText = Math.floor(current).toLocaleString('pt-BR');
-                }, stepTime);
+                    element.innerText = current.toLocaleString('pt-BR');
+                }, 16);
             }
-
+            
             const tableBody = document.getElementById('comparison-table-body');
             if(tableBody) {
                 const tableObserver = new IntersectionObserver((entries, observer) => {
                      if (entries[0].isIntersecting) {
                         const rows = tableBody.querySelectorAll('tr');
                         rows.forEach((row, index) => {
-                            row.style.opacity = '0';
-                            row.style.transform = 'translateX(-20px)';
-                            row.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
                             setTimeout(() => {
                                 row.style.opacity = '1';
                                 row.style.transform = 'translateX(0)';
@@ -410,119 +358,34 @@
                 }, { threshold: 0.5 });
                 tableObserver.observe(tableBody);
             }
-            
-            // --- NEW: Gemini API Integration ---
-            const modal = document.getElementById('explanation-modal');
+
+            const actionButton = document.getElementById('action-button');
+            const modal = document.getElementById('action-modal');
+            const modalContent = document.getElementById('modal-content');
             const closeModalBtn = document.getElementById('close-modal-btn');
-            const modalTitle = document.getElementById('modal-title');
-            const modalBody = document.getElementById('modal-body');
 
-            const explainHalvingBtn = document.getElementById('explain-halving');
-            const explainDecentralizationBtn = document.getElementById('explain-decentralization');
-            const generateArgumentsBtn = document.getElementById('generate-arguments-btn');
-
-            const loaderHtml = `<div class="flex justify-center items-center h-32"><div class="loader"></div></div>`;
-
-            // Function to call Gemini API
-            async function callGemini(prompt) {
-                const apiKey = ""; // API key is handled by the environment
-                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
-                
-                const payload = {
-                    contents: [{
-                        role: "user",
-                        parts: [{ text: prompt }]
-                    }]
-                };
-
-                try {
-                    const response = await fetch(apiUrl, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
-
-                    if (!response.ok) {
-                       throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-
-                    const result = await response.json();
-                    
-                    if (result.candidates && result.candidates.length > 0) {
-                        return result.candidates[0].content.parts[0].text;
-                    } else {
-                        return "Não foi possível obter uma resposta da IA. Tente novamente.";
-                    }
-                } catch (error) {
-                    console.error("Erro ao chamar a API Gemini:", error);
-                    return `Ocorreu um erro ao buscar a explicação. Por favor, verifique o console para mais detalhes.`;
-                }
-            }
-            
-            // --- Modal Controls ---
-            function openModal(title, prompt) {
-                modalTitle.innerText = title;
-                modalBody.innerHTML = loaderHtml;
+            function openModal() {
                 modal.classList.remove('hidden');
-                setTimeout(() => modal.classList.remove('opacity-0'), 10);
-                setTimeout(() => modal.querySelector('.modal-content').classList.remove('scale-95'), 10);
-
-                callGemini(prompt).then(response => {
-                    // Simple markdown to HTML conversion
-                    let formattedResponse = response
-                        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                        .replace(/\*(.*?)\*/g, '<em>$1</em>')
-                        .replace(/\n/g, '<br>');
-                    modalBody.innerHTML = formattedResponse;
-                });
+                setTimeout(() => {
+                    modal.classList.remove('opacity-0');
+                    modalContent.classList.remove('opacity-0', 'scale-95');
+                }, 10);
             }
 
             function closeModal() {
-                modal.querySelector('.modal-content').classList.add('scale-95');
+                modalContent.classList.add('opacity-0', 'scale-95');
                 modal.classList.add('opacity-0');
-                setTimeout(() => modal.classList.add('hidden'), 300);
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                }, 300);
             }
 
+            actionButton.addEventListener('click', openModal);
             closeModalBtn.addEventListener('click', closeModal);
             modal.addEventListener('click', (e) => {
                 if (e.target === modal) {
                     closeModal();
                 }
-            });
-
-            // --- Button Event Listeners ---
-            explainHalvingBtn.addEventListener('click', () => {
-                const prompt = "Explique o que é o Halving do Bitcoin como se eu tivesse 5 anos. Use uma analogia divertida com uma caça ao tesouro onde os prêmios ficam mais raros a cada ano.";
-                openModal("O Que é o Halving? ✨", prompt);
-            });
-
-            explainDecentralizationBtn.addEventListener('click', () => {
-                const prompt = "Explique o que é descentralização no Bitcoin como se eu tivesse 5 anos. Use uma analogia com um caderno de anotações que todos no parquinho têm uma cópia, em vez de apenas a professora ter.";
-                openModal("O que é Descentralização? ✨", prompt);
-            });
-
-            generateArgumentsBtn.addEventListener('click', async () => {
-                const btnText = document.getElementById('btn-text');
-                const btnLoader = document.getElementById('btn-loader');
-                const outputDiv = document.getElementById('arguments-output');
-
-                btnText.classList.add('hidden');
-                btnLoader.classList.remove('hidden');
-                generateArgumentsBtn.disabled = true;
-                outputDiv.innerHTML = '';
-
-                const prompt = "Aja como um entusiasta de Bitcoin. Crie 3 argumentos curtos, numerados e amigáveis para eu usar para explicar a importância do Bitcoin para um amigo cético. Foque em problemas do dia a dia que as pessoas enfrentam com o dinheiro tradicional.";
-                const response = await callGemini(prompt);
-                
-                let formattedResponse = response
-                    .replace(/\*\*(.*?)\*\*/g, '<h4>$1</h4>')
-                    .replace(/\n/g, '<br>')
-                    .replace(/(\d\.)/g, '<br><strong>$1</strong>');
-
-                outputDiv.innerHTML = formattedResponse;
-                btnText.classList.remove('hidden');
-                btnLoader.classList.add('hidden');
-                generateArgumentsBtn.disabled = false;
             });
         });
     </script>
