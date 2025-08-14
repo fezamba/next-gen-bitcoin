@@ -4,7 +4,7 @@ Um site expositivo e interativo sobre Bitcoin, desenvolvido para educar os visit
 
 ---
 
-### 🔗 **[Acesse a versão ao vivo do projeto aqui!](https://next-gen-bitcoin-production.up.railway.app/)**
+### 🔗 **[Acesse a versão ao vivo do projeto aqui!](https://fezamba.github.io/next-gen-bitcoin/)**
 
 ---
 
